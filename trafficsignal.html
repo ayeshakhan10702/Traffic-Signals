@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signals </title>
+
+
+     <style> 
+        
+.text{ 
+    font-size: 21px;
+    height: 100px;
+    width: 320px;
+    position: absolute;
+    left: 350px; 
+    font-weight: bold;
+}
+#p1{
+    top:0px;
+    margin-top: 5px;
+    background-color: darkred;
+    animation-name: colorAnimation ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+}
+@keyframes colorAnimation{
+    from{
+        background-color: darkred;
+    }
+    to{
+        background-color:red;
+    }
+}
+#p2{
+    top:50px;
+    margin-top: 60px;
+    background-color:  #8B8000;
+    animation-name: colorAnimations;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count:1;
+} 
+@keyframes colorAnimations{
+    from{
+        background-color: #8B8000;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+
+
+#p3{
+    top:100px;
+    margin-top: 115px;
+    background-color: green;
+    animation-name: colourAnimations;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 4s;
+    animation-iteration-count:linear;
+} 
+@keyframes colourAnimations{
+    from{
+        background-color: darkgreen;
+    }
+    to{
+        background-color: rgba(00,255,00,0.65);
+    }
+}
+
+#image{
+    height: 315px;
+    width:290px;
+}
+
+#container {
+    position: relative; 
+    width: 290px;
+    height: 315px; 
+    border: 1px solid black;
+}
+
+
+.circle {
+    position: absolute; 
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+#circle1 {
+    background-color: darkred;
+    top: 40px; 
+    left: 105px; 
+    animation-name: colorAnimation ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: linear;
+
+}
+@keyframes colorAnimation{
+    from{
+        background-color: darkred;
+    }
+    to{
+        background-color: red;
+    }
+}
+#circle2 {
+    background-color: #8B8000;
+    top: 130px;  
+    left: 105px; 
+    animation-name: colorAnimations;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count:linear;
+}
+@keyframes colorAnimations{
+    from{
+        background-color: #8B8000;
+    }
+    to{
+        background-color: yellow;
+    }
+}
+
+#circle3 {
+ 
+    height: 76.5px;
+    width: 76.5px;
+    background-color: darkgreen;
+    top: 225px;  
+    left: 106px; 
+    animation-name: colourAnimations;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 4s;
+    animation-iteration-count:linear;
+}
+@keyframes colourAnimations{
+    from{
+        background-color: darkgreen;
+    }
+    to{
+        background-color: rgba(00,255,00,0.75);
+    }
+}
+
+     </style>
+</head>
+<body>
+<div id="container"> 
+    <img id="image" src="TF Signals.jpg"  > 
+    <div id="circle1"  class="circle"></div>
+    <div id="circle2"  class="circle"></div>
+    <div id="circle3"  class="circle"></div>
+</div>
+
+<p id="p1" class="text">
+    Red light, red light what do you say? <br>
+    I say stop! <br> Stop right away
+</p>
+
+ <p id="p2" class="text">
+    Yellow light, yellow light what do you mean? <br>
+    I say wait till!<br> The light is green
+</p> 
+
+<p id="p3" class="text">
+    Green light, green light what do you say? <br>
+    I say go! <br>Go right away
+    
+</body>
+</html>
